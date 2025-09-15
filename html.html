@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume | Naveen K</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased">
+
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-gray-800">Naveen K</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#skills" class="nav-link text-gray-600 hover:text-teal-500 transition duration-300">Skills</a>
+                <a href="#projects" class="nav-link text-gray-600 hover:text-teal-500 transition duration-300">Projects</a>
+                <a href="#education" class="nav-link text-gray-600 hover:text-teal-500 transition duration-300">Education</a>
+                <a href="#achievements" class="nav-link text-gray-600 hover:text-teal-500 transition duration-300">Achievements</a>
+            </div>
+             <div class="md:hidden">
+                <select id="mobile-nav" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5">
+                    <option value="#hero">Home</option>
+                    <option value="#skills">Skills</option>
+                    <option value="#projects">Projects</option>
+                    <option value="#education">Education</option>
+                    <option value="#achievements">Achievements</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="py-20 md:py-32 bg-teal-50">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">Naveen K</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600">Electronics & Communication Engineering Graduate</p>
+                <p class="mt-4 max-w-2xl mx-auto text-gray-700">
+                    Seeking an entry-level data analytics role to apply a strong foundation in SQL, Python, and Excel, combined with hands-on project experience and a passion for turning data into actionable insights.
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center items-center gap-x-6 gap-y-4 text-gray-600">
+                    <div class="flex items-center space-x-2">
+                        <span class="font-bold">✉️</span>
+                        <a href="mailto:naveenkumarasmy069@gmail.com" class="hover:text-teal-600">naveenkumarasmy069@gmail.com</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                         <span class="font-bold">📞</span>
+                        <span>+91 9003656643</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                         <span class="font-bold">🔗</span>
+                        <a href="https://linkedin.com/in/naveen-k-b9a80b24b" target="_blank" class="hover:text-teal-600">LinkedIn</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="font-bold">👨‍💻</span>
+                        <a href="https://github.com/Naveen007-8/Data-Analytics-web" target="_blank" class="hover:text-teal-600">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Technical Skills</h2>
+                    <p class="mt-2 text-gray-600">An interactive overview of my technical abilities. Click the buttons to filter by category.</p>
+                </div>
+                <div class="flex justify-center space-x-2 mb-8">
+                    <button class="skill-filter-btn bg-teal-500 text-white py-2 px-4 rounded-full transition duration-300" data-category="all">All Skills</button>
+                    <button class="skill-filter-btn bg-gray-200 text-gray-700 py-2 px-4 rounded-full transition duration-300" data-category="Languages">Languages</button>
+                    <button class="skill-filter-btn bg-gray-200 text-gray-700 py-2 px-4 rounded-full transition duration-300" data-category="Databases">Databases</button>
+                    <button class="skill-filter-btn bg-gray-200 text-gray-700 py-2 px-4 rounded-full transition duration-300" data-category="Tools">Tools</button>
+                </div>
+                <div class="chart-container">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Projects</h2>
+                    <p class="mt-2 text-gray-600">Hands-on experience applying technology to solve real-world problems.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Voice-Controlled Home Automation System</h3>
+                        <p class="text-gray-600 mb-4">Developed a Python-based system enabling voice-command control over home appliances, similar to virtual assistants like Siri and Alexa. Engineered a voice recognition module to accurately process and execute user commands for seamless operation.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Speech Recognition</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Automated Filtration System for Poultry Farms</h3>
+                        <p class="text-gray-600 mb-4">Designed an automated, sensor-based system to detect and reduce harmful ammonia and H2S emissions, improving air quality in poultry farms. Implemented a Python script to trigger the filtration system automatically when gas levels exceeded safe thresholds.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full">IoT</span>
+                             <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Sensors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Education</h2>
+                    <p class="mt-2 text-gray-600">My academic journey and foundational learning.</p>
+                </div>
+                <div class="relative max-w-2xl mx-auto">
+                    <div class="border-l-2 border-teal-500 absolute h-full top-0 left-1.5"></div>
+                    <div class="space-y-12">
+                        <div class="pl-8 relative">
+                            <div class="absolute w-4 h-4 bg-teal-500 rounded-full mt-1.5 -left-2 border-4 border-white"></div>
+                            <p class="text-gray-500">Expected May 2025</p>
+                            <h3 class="text-xl font-bold text-gray-800">B.E., Electronics & Communication Engineering</h3>
+                            <p class="text-gray-700">Ramco Institute Of Technology (Anna University Affiliate)</p>
+                            <p class="text-sm text-gray-600 mt-1">CGPA: 7.6 / 10.0</p>
+                        </div>
+                         <div class="pl-8 relative">
+                            <div class="absolute w-4 h-4 bg-teal-500 rounded-full mt-1.5 -left-2 border-4 border-white"></div>
+                            <h3 class="text-xl font-bold text-gray-800">Higher Secondary Education (HSC)</h3>
+                            <p class="text-gray-700">Sri Ramana Vidyalaya</p>
+                            <p class="text-sm text-gray-600 mt-1">Percentage: 85.4%</p>
+                        </div>
+                         <div class="pl-8 relative">
+                            <div class="absolute w-4 h-4 bg-teal-500 rounded-full mt-1.5 -left-2 border-4 border-white"></div>
+                            <h3 class="text-xl font-bold text-gray-800">Secondary Education (SSLC)</h3>
+                            <p class="text-gray-700">Sri Ramana Vidyalaya</p>
+                            <p class="text-sm text-gray-600 mt-1">Percentage: 78.4%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">Certifications</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-teal-500 mr-3 mt-1">🎓</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Google Data Analytics Professional Certificate</h4>
+                                    <p class="text-gray-600">Coursera | May 2023</p>
+                                </div>
+                            </li>
+                             <li class="flex items-start">
+                                <span class="text-teal-500 mr-3 mt-1">⏳</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Python Full Stack with Data Analytics</h4>
+                                    <p class="text-gray-600">Qspiders (Pursuing)</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-500 mr-3 mt-1">⏳</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Database Management System</h4>
+                                    <p class="text-gray-600">(Pursuing)</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">Key Achievements</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-teal-500 mr-3 mt-1">🏆</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Published Research Paper</h4>
+                                    <p class="text-gray-600">Contributed to a paper published in the ICMSLE 2025 conference proceedings.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-500 mr-3 mt-1">🏆</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">President, Elite English Learners Club</h4>
+                                    <p class="text-gray-600">Led the club and successfully organized the "Stellar '25" event, fostering language skills among peers.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Naveen K. All Rights Reserved.</p>
+             <div class="mt-4 flex justify-center items-center space-x-6">
+                <a href="mailto:naveenkumarasmy06-69@gmail.com" class="hover:text-teal-400">Email</a>
+                <span>&bull;</span>
+                <a href="https://linkedin.com/in/naveen-k-b9a80b24b" target="_blank" class="hover:text-teal-400">LinkedIn</a>
+                <span>&bull;</span>
+                <a href="https://github.com/Naveen007-8/Data-Analytics-web" target="_blank" class="hover:text-teal-400">GitHub</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+
