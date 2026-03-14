@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const skillsData = {
         labels: ['Python Library', 'SQL', 'Excel', 'Power BI', 'Git', 'GitHub'],
-        proficiency: [70, 80, 50, 70, 50, 50],
+        proficiency: [70, 80, 50, 70, 55, 55],
         categories: ['Languages', 'Databases', 'Tools', 'Tools', 'Tools', 'Tools']
     };
 
